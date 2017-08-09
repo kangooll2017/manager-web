@@ -4,6 +4,11 @@
 	<listener>
 		<listener-class>com.chilema.manager.listener.MyAppListener</listener-class>
 	</listener>
+	
+	<!-- 自定义的服务器生命周期监听器 -->
+	<listener>
+		<listener-class>com.chilema.manager.listener.MyAppListener</listener-class>
+	</listener>
 
 	<!-- 启动spring ioc容器 -->
 	<!-- needed for ContextLoaderListener -->
@@ -30,7 +35,6 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
 	<!-- Map all requests to the DispatcherServlet for handling -->
 	<servlet-mapping>
 		<servlet-name>springDispatcherServlet</servlet-name>
