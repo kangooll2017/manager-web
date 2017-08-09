@@ -1,5 +1,4 @@
 <html ng-app="eleme" perf-error="desktop/profile/" class="ng-scope">
-
 	<head>
 		<style type="text/css">
 			@charset "UTF-8";
@@ -12,16 +11,13 @@
 			.ng-hide {
 				display: none !important;
 			}
-			
 			ng\:form {
 				display: block;
 			}
-			
 			.ng-animate-block-transitions {
 				transition: 0s all!important;
 				-webkit-transition: 0s all!important;
 			}
-			
 			.ng-hide-add-active,
 			.ng-hide-remove {
 				display: block!important;
@@ -29,56 +25,21 @@
 		</style>
 		<meta charset="utf-8">
 		<meta name="renderer" content="webkit">
-
 		<title ng-bind="SEO.title" class="ng-binding">个人中心 | 吃了么网上订餐</title>
-
 		<meta name="format-detection" content="telephone=no, email=no">
-
 		<meta name="application-name" content="吃了么网上订餐">
 		<meta name="msapplication-tooltip" content="吃了么网上订餐">
-		<meta name="msapplication-starturl" content="./">
-		<meta name="msapplication-tileimage" content="=http://static11.elemecdn.com/apple-touch-icon.png?v=2">
-		<meta name="msapplication-tilecolor" content="#0088ff">
-<!-- 		<meta name="msapplication-task" content="name=切换地区;action-uri=http://ele.me/home;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2"> -->
-<!-- 		<meta name="msapplication-task" content="name=我要订餐;action-uri=http://ele.me?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2"> -->
-<!-- 		<meta name="msapplication-task" content="name=订单中心;action-uri=http://ele.me/profile?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2"> -->
-<!-- 		<meta name="msapplication-task" content="name=寻求帮助（HELP）;action-uri=http://ele.me/support?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2"> -->
-		<meta property="qc:admins" content="2263606250655">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-		<link rel="apple-touch-icon-precomposed" href="https://static2.ele.me/apple-touch-icon.png?v=2">
-
 		<link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png">
 		<link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16">
 		<link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32">
 		<link rel="icon" href="img/favicon.png" type="image/png" sizes="96x96">
-
 		<link href="css/vendor.d724a8.css" rel="stylesheet">
-
 		<link href="css/profile.659db1.css" rel="stylesheet">
-
-		<!--[if lte IE 8]><script>window.location.href='https://h.ele.me/activities/landing';</script><![endif]-->
-		<!--
-        	作者：offline
-        	时间：2017-08-08
-        	描述：
-        	<script src="//crayfish.elemecdn.com/www.ele.me@ref/api" data-ref="API_CONFIG"></script>
-		<script src="//faas.elemecdn.com/desktop/perf.js" type="text/javascript" crossorigin="anonymous"></script>
-		<script src="//faas.elemecdn.com/desktop/vendor.f1217a.js" type="text/javascript" crossorigin="anonymous"></script>
-		<script src="//faas.elemecdn.com/desktop/profile.da9365.js" type="text/javascript" crossorigin="anonymous"></script>
-        -->
-		
-		<!--
-        	作者：offline
-        	时间：2017-08-08
-        	描述：
-        	<base href="/profile/">
-        -->
 		<meta name="mobile-agent" content="format=html5; url=http://m.ele.me/profile">
 		<meta name="description" content="吃了么是中国专业的网上订餐平台，目前已覆盖北京、上海、杭州、广州等300多个城市，提供各类中式、日式、韩式、西式、下午茶、夜宵等优质美食，并提供送餐上门服务，让订餐更加轻松，叫外卖就上吃了么！">
 		<meta name="keywords" content="吃了么，网上订餐，外卖，快餐外卖，外卖网">
 	</head>
-
 	<body cute-title="" ng-class="{hidesidebar: layoutState &amp;&amp; layoutState.hideSidebar, smallbody: layoutState.smallBody, whitebody: layoutState.whiteBody}" style="position: relative;">
 
 		<div ng-switch="state.type" state="layoutState" class="ng-isolate-scope">
