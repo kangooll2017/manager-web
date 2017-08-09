@@ -11,7 +11,7 @@
 
 	<dependencies>
 
-		<!-- web依赖service -->
+		<!-- web依赖service层 -->
 		<dependency>
 			<groupId>com.chilema.item</groupId>
 			<artifactId>manager-service</artifactId>
