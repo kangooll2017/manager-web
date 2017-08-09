@@ -1,0 +1,129 @@
+<!doctype html>
+<html ng-app="eleme" perf-error="desktop/home/">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit" />
+<!-- 		<meta dynamic-meta name="mobile-agent" content="format=html5; url=http://m.ele.me/place/" /> -->
+
+		<title ng-bind="SEO.title">吃了么-网上订餐_外卖_吃了么订餐官网</title>
+
+		<meta dynamic-meta name="description" content="吃了么是中国专业的网上订餐平台，目前已覆盖北京、上海、杭州、广州等300多个城市，提供各类中式、日式、韩式、西式、下午茶、夜宵等优质美食，并提供送餐上门服务，让订餐更加轻松，叫外卖就上吃了么！">
+		<meta dynamic-meta name="keywords" content="吃了么，网上订餐，外卖，快餐外卖，外卖网">
+		<meta name="format-detection" content="telephone=no, email=no" />
+
+		<meta name="application-name" content="吃了么网上订餐" />
+		<meta name="msapplication-tooltip" content="吃了么网上订餐" />
+		<meta name="msapplication-starturl" content="./" />
+<!-- 		<meta name="msapplication-tileimage" content="=http://static11.elemecdn.com/apple-touch-icon.png?v=2" /> -->
+<!-- 		<meta name="msapplication-tilecolor" content="#0088ff" /> -->
+<!-- 		<meta name="msapplication-task" content="name=切换地区;action-uri=http://ele.me/home;icon-uri=http://apple-touch-icon.png" /> -->
+<!-- 		<meta name="msapplication-task" content="name=我要订餐;action-uri=http://ele.me?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2" /> -->
+<!-- 		<meta name="msapplication-task" content="name=订单中心;action-uri=http://ele.me/profile?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2" /> -->
+<!-- 		<meta name="msapplication-task" content="name=寻求帮助（HELP）;action-uri=http://ele.me/support?from=IE;icon-uri=http://static11.elemecdn.com/apple-touch-icon.png?v=2" /> -->
+<meta property="qc:admins" content="2263606250655" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+
+		<link rel="shortcut icon" href="img/favicon-16x16.png" type="image/png" />
+		<link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16" />
+		<link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32" />
+		<link rel="icon" href="img/favicon.png" type="image/png" sizes="96x96" />
+
+		<link href="css/vendor.d724a8.css" rel="stylesheet">
+
+		<link href="css/home.4dd409.css" rel="stylesheet">
+
+		<!--[if lte IE 8]><script>window.location.href='https://h.ele.me/activities/landing';</script><![endif]-->
+
+		<!--
+    	作者：offline
+    	时间：2017-08-08
+    	描述：
+    	<script src="/crayfish.elemecdn.com/www.ele.me@ref/api" data-ref="API_CONFIG"></script>
+    -->
+		<script src="js/perf.js" type="text/javascript" crossorigin="anonymous"></script>
+		<!--
+   	作者：offline
+   	时间：2017-08-08
+   	描述：
+   	<script src="../../js/vendor.f1217a.js" type="text/javascript" crossorigin="anonymous"></script>
+   	 <script src="../../js/home.0175e2.js" type="text/javascript" crossorigin="anonymous"></script>
+   -->
+
+<!-- 		<base href="home/"> -->
+	</head>
+
+	<body cute-title ng-class="{hidesidebar: layoutState && layoutState.hideSidebar, smallbody: layoutState.smallBody, whitebody: layoutState.whiteBody}">
+
+		<!-- ngView:  -->
+		<div ng-view="" role="main" class="ng-scope">
+			<div class="map ng-scope" ng-class="{mapmode: mapMode}">
+				<div class="container mapcontainer">
+					<div class="map-header clearfix" map-header="">
+						<h1>
+						<a href="/" ubt-click="1433"><img
+							src="img/login/map-logo.9a26ef.png"
+							alt="eleme"></a>
+					</h1>
+						<!-- ngIf: user.user_id -->
+						<!-- ngIf: !user.user_id -->
+						<span class="map-header-right ng-scope" ng-if="!user.user_id"><a
+						ng-href="login.html"
+						target="_blank" ubt-click="1430"
+						href="login.html">注册</a> <span>|</span> <a ng-href="login.html" ubt-click="1431" href="login.html">登录</a>						<a class="btn-security btn-sm" href="applyshop.html" target="_blank" ubt-click="1432">我要开店</a></span>
+						<!-- end ngIf: !user.user_id -->
+					</div>
+					<div class="map-main ng-isolate-scope" ng-class="{mapmode: mapMode}" map-main="" map-mode="mapMode">
+						<h2 class="map-logo">
+						<img
+							src="img/login/map-logo.9a26ef.png"
+							alt="eleme">
+					</h2>
+						<div class="map-navbar clearfix" ng-class="{hasuserinfo: $root.user.user_id}">
+							<div map-city="" hide-search-result="hideSearchResult" current-city="currentCity" class="map-city ng-isolate-scope" map-mode="mapMode">
+								<a class="mapcity-current ng-binding" href="javascript:" ng-bind="mapCity.current.name" ng-click="mapCity.toggle($event)">深圳</a>
+								<!-- ngIf: mapCity.showCities -->
+							</div>
+							<div map-search="" hide-search-result="hideSearchResult" current-city="currentCity" map-mode="mapMode" class="map-search ng-isolate-scope">
+								<form class="mapsearch-inputbar ng-pristine ng-valid" ng-submit="search.showSuggests($event, search.keyword)">
+									<input placeholder="请输入你的收货地址（写字楼，小区，街道或者学校）" ng-model="search.keyword" ng-keyup="search.showSuggests($event, search.keyword)" ng-keydown="search.chooseSuggest($event)" ng-click="search.showSuggests($event)" ng-focus="search.showSuggests($event, search.keyword)"
+										class="ng-pristine ng-valid"> <button class="btn-stress" type="submit">搜 索</button>
+								</form>
+								<div class="mapsearch-suggestlist ui-scrollbar-light">
+									<!-- ngIf: search.suggests.length -->
+									<!-- ngIf: search.done && !search.suggests.length -->
+								</div>
+								<!-- ngIf: search.resultshow && !hideSearchResult && mapMode -->
+							</div>
+						</div>
+						<div class="map-content"></div>
+					</div>
+					<div class="mapfooter" map-footer="">
+						<div class="mapfooter-app">
+							<div class="mapfooter-app-image">
+								<img src="//faas.elemecdn.com/desktop/media/img/appqc.95e532.png" alt="扫码下载 APP"> <span>扫码下载 APP</span>
+							</div>
+							<div class="mapfooter-app-text">
+								<p>新用户首次下单</p>
+								<strong class="color-stress">最高立减20元</strong>
+								<p>立即下载APP，享更多优惠吧！</p>
+							</div>
+						</div>
+						<p class="mapfooter-link">
+							<a href="applyshop.html" ubt-click="1434">我要开店</a> <a href="/support/about" ubt-click="1435">联系我们</a> <a href="/support/about/agreement" ubt-click="1436">服务条款和协议</a> <a href="http://jobs.ele.me" ubt-click="1437">加入我们</a> <a href="//fengniao.ele.me/">蜂鸟配送</a>
+						</p>
+						<div class="footer-copyright serif">增值电信业务许可证 : <a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> | <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032</a> | <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823"
+								target="_blank">上海工商行政管理</a> Copyright ©2008-2017 上海拉扎斯信息科技有限公司, All Rights Reserved.</div>
+						<div class="footer-police container">
+							<a href="http://www.zx110.org/picp/?sn=310100103568" rel="nofollow" target="_blank"><img alt="已通过沪公网备案，备案号 310100103568" src="//faas.elemecdn.com/desktop/media/img/picp_bg.e373b3.jpg" height="30"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
