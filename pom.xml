@@ -6,7 +6,7 @@
 		<artifactId>chilema-manager</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>manager-web</artifactId>
+	<artifactId>chilema-manager-web</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -14,7 +14,7 @@
 		<!-- web依赖service层 -->
 		<dependency>
 			<groupId>com.chilema.item</groupId>
-			<artifactId>manager-service</artifactId>
+			<artifactId>chilema-manager-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
@@ -96,6 +96,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
+
 	</dependencies>
 
 </project>

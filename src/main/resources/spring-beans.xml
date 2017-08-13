@@ -14,7 +14,7 @@
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
 		<property name="username" value="root"></property>
 		<property name="password" value="123456"></property>
-		<property name="url" value="jdbc:mysql://localhost:3306/chilema"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/chilemei"></property>
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		
 		<property name="initialSize" value="5"></property>
