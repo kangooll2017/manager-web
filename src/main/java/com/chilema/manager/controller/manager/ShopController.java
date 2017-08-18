@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ShopController {
     
     /**
-     * 展示所有商家
+     * 去展示所有商家的页面
      * @Description (TODO这里用一句话描述这个方法的作用)
      * @return
      */

@@ -6,5 +6,7 @@
 <script src="${ctp }/script/docs.min.js"></script>
 <script src="${ctp }/script/back-to-top.js"></script>
 <script src="${ctp }/plugin/jquery-validation-1.13.1/dist/jquery.validate.min.js"></script>
-<script src="${ctp }/plugin/laypage/laypage.js"></script>
 <script src="${ctp }/plugin/ztree/jquery.ztree.all-3.5.min.js"></script>
+<script src="${ctp }/plugin/laypage/laypage.js"></script>
+<script src="${ctp }/plugin/laypage/layer.js"></script>
+<script src="${ctp }/plugin/laypage/laycode.min.js"></script>
